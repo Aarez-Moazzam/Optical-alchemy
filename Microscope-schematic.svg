@@ -1,0 +1,175 @@
+<svg viewBox="0 0 1750 950" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1750" height="950" fill="#ffffff"/>
+
+  <!-- ===================== BATTERY ===================== -->
+  <line x1="120" y1="80" x2="120" y2="100" stroke="#000" stroke-width="2.5"/>
+  <line x1="100" y1="100" x2="140" y2="100" stroke="#000" stroke-width="3"/>
+  <line x1="108" y1="118" x2="132" y2="118" stroke="#000" stroke-width="7"/>
+  <line x1="120" y1="118" x2="120" y2="150" stroke="#000" stroke-width="2.5"/>
+  <line x1="100" y1="150" x2="140" y2="150" stroke="#000" stroke-width="3"/>
+  <line x1="108" y1="168" x2="132" y2="168" stroke="#000" stroke-width="7"/>
+  <line x1="120" y1="168" x2="120" y2="200" stroke="#000" stroke-width="2.5"/>
+  <line x1="100" y1="200" x2="140" y2="200" stroke="#000" stroke-width="3"/>
+  <line x1="108" y1="218" x2="132" y2="218" stroke="#000" stroke-width="7"/>
+  <line x1="120" y1="218" x2="120" y2="260" stroke="#000" stroke-width="2.5"/>
+  <text x="145" y="92" font-size="13" fill="#c0392b" font-weight="bold">+</text>
+  <text x="145" y="252" font-size="13" fill="#1a5276" font-weight="bold">-</text>
+  <text x="15" y="165" font-size="12" font-weight="bold" fill="#0f2a4a">3-Cell Battery</text>
+  <circle cx="120" cy="80" r="4" fill="#000"/>
+  <circle cx="120" cy="260" r="4" fill="#000"/>
+
+  <!-- Battery+ -> SW4 -> TP4056 B+ -->
+  <line x1="120" y1="80" x2="170" y2="80" stroke="#000" stroke-width="2.5"/>
+  <circle cx="170" cy="80" r="4" fill="#000"/>
+  <circle cx="220" cy="80" r="4" fill="#000"/>
+  <line x1="170" y1="80" x2="245" y2="55" stroke="#000" stroke-width="2.5"/>
+  <text x="180" y="45" font-size="13" fill="#0f2a4a" font-weight="bold">SW4</text>
+  <line x1="220" y1="80" x2="280" y2="80" stroke="#000" stroke-width="2.5"/>
+  <line x1="280" y1="80" x2="280" y2="100" stroke="#000" stroke-width="2.5"/>
+
+  <!-- Battery- -> TP4056 B- -->
+  <line x1="120" y1="260" x2="200" y2="260" stroke="#000" stroke-width="2.5"/>
+  <line x1="200" y1="260" x2="200" y2="240" stroke="#000" stroke-width="2.5"/>
+  <line x1="200" y1="240" x2="280" y2="240" stroke="#000" stroke-width="2.5"/>
+
+  <!-- ===================== TP4056 MODULE ===================== -->
+  <rect x="280" y="60" width="240" height="220" rx="8" fill="#eafaf1" stroke="#1e8449" stroke-width="2"/>
+  <text x="400" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#145a32">TP4056</text>
+  <text x="400" y="170" text-anchor="middle" font-size="12" fill="#1e8449">Li-ion Charger Module</text>
+  <text x="286" y="94" font-size="10" fill="#333">B+</text>
+  <text x="286" y="255" font-size="10" fill="#333">B-</text>
+  <text x="466" y="94" font-size="10" fill="#333">OUT+</text>
+  <text x="466" y="255" font-size="10" fill="#333">OUT-</text>
+
+  <!-- USB-C connector on TP4056 -->
+  <rect x="380" y="280" width="40" height="16" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="400" y="315" text-anchor="middle" font-size="11" fill="#333">USB-C IN</text>
+
+  <!-- TP4056 OUT+ -> SW5 -> LM2596 VIN -->
+  <line x1="520" y1="100" x2="570" y2="100" stroke="#000" stroke-width="2.5"/>
+  <circle cx="570" cy="100" r="4" fill="#000"/>
+  <circle cx="620" cy="100" r="4" fill="#000"/>
+  <line x1="570" y1="100" x2="645" y2="75" stroke="#000" stroke-width="2.5"/>
+  <text x="580" y="65" font-size="13" fill="#0f2a4a" font-weight="bold">SW5</text>
+  <line x1="620" y1="100" x2="680" y2="100" stroke="#000" stroke-width="2.5"/>
+
+  <!-- TP4056 OUT- -> LM2596 GND -->
+  <line x1="520" y1="240" x2="680" y2="240" stroke="#000" stroke-width="2.5"/>
+
+  <!-- ===================== LM2596 BUCK CONVERTER ===================== -->
+  <rect x="680" y="60" width="220" height="220" rx="8" fill="#f4ecf7" stroke="#6c3483" stroke-width="2"/>
+  <text x="790" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#4a235a">LM2596</text>
+  <text x="790" y="170" text-anchor="middle" font-size="12" fill="#6c3483">Buck Converter</text>
+  <text x="790" y="188" text-anchor="middle" font-size="10.5" fill="#6c3483">(stable step-down Vout)</text>
+  <text x="686" y="94" font-size="10" fill="#333">VIN</text>
+  <text x="686" y="255" font-size="10" fill="#333">GND</text>
+  <text x="846" y="94" font-size="10" fill="#333">VOUT</text>
+  <text x="846" y="255" font-size="10" fill="#333">GND</text>
+
+  <!-- LM2596 VOUT -> +RAIL -->
+  <line x1="900" y1="100" x2="960" y2="100" stroke="#000" stroke-width="2.5"/>
+  <line x1="960" y1="100" x2="960" y2="380" stroke="#000" stroke-width="2.5"/>
+  <circle cx="960" cy="380" r="4" fill="#000"/>
+
+  <!-- LM2596 GND -> GND RAIL -->
+  <line x1="900" y1="240" x2="900" y2="850" stroke="#000" stroke-width="2.5"/>
+  <circle cx="900" cy="850" r="4" fill="#000"/>
+
+  <!-- ===================== RAILS ===================== -->
+  <line x1="960" y1="380" x2="1460" y2="380" stroke="#000" stroke-width="2.5"/>
+  <line x1="900" y1="850" x2="1650" y2="850" stroke="#000" stroke-width="2.5"/>
+  <text x="1465" y="376" font-size="12" fill="#c0392b" font-weight="bold">+V</text>
+  <text x="1655" y="846" font-size="12" fill="#1a5276" font-weight="bold">GND</text>
+
+  <!-- ===================== BRANCH 1: LED1 + R1 ===================== -->
+  <circle cx="1020" cy="380" r="4" fill="#000"/>
+  <line x1="1020" y1="380" x2="1020" y2="430" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1020" cy="430" r="4" fill="#000"/>
+  <circle cx="1020" cy="485" r="4" fill="#000"/>
+  <line x1="1020" y1="430" x2="1045" y2="405" stroke="#000" stroke-width="2.5"/>
+  <text x="1035" y="418" font-size="13" fill="#0f2a4a" font-weight="bold">SW1</text>
+  <line x1="1020" y1="485" x2="1020" y2="515" stroke="#000" stroke-width="2.5"/>
+
+  <rect x="1000" y="515" width="40" height="55" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="1050" y="537" font-size="13" fill="#0f2a4a" font-weight="bold">R1</text>
+  <text x="1050" y="553" font-size="12" fill="#333">330Ω</text>
+  <line x1="1020" y1="570" x2="1020" y2="605" stroke="#000" stroke-width="2.5"/>
+
+  <polygon points="1000,605 1040,605 1020,645" fill="#fff" stroke="#000" stroke-width="2"/>
+  <line x1="1000" y1="645" x2="1040" y2="645" stroke="#000" stroke-width="2.5"/>
+  <line x1="1032" y1="600" x2="1045" y2="587" stroke="#000" stroke-width="1.5"/>
+  <line x1="1041" y1="596" x2="1045" y2="587" stroke="#000" stroke-width="1.5"/>
+  <line x1="1041" y1="587" x2="1045" y2="587" stroke="#000" stroke-width="1.5"/>
+  <line x1="1040" y1="610" x2="1053" y2="597" stroke="#000" stroke-width="1.5"/>
+  <line x1="1049" y1="606" x2="1053" y2="597" stroke="#000" stroke-width="1.5"/>
+  <line x1="1049" y1="597" x2="1053" y2="597" stroke="#000" stroke-width="1.5"/>
+  <text x="1055" y="630" font-size="13" fill="#0f2a4a" font-weight="bold">LED1</text>
+  <line x1="1020" y1="645" x2="1020" y2="850" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1020" cy="850" r="4" fill="#000"/>
+
+  <!-- ===================== BRANCH 2: LED2 + RV1 ===================== -->
+  <circle cx="1180" cy="380" r="4" fill="#000"/>
+  <line x1="1180" y1="380" x2="1180" y2="430" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1180" cy="430" r="4" fill="#000"/>
+  <circle cx="1180" cy="485" r="4" fill="#000"/>
+  <line x1="1180" y1="430" x2="1205" y2="405" stroke="#000" stroke-width="2.5"/>
+  <text x="1195" y="418" font-size="13" fill="#0f2a4a" font-weight="bold">SW2</text>
+  <line x1="1180" y1="485" x2="1180" y2="515" stroke="#000" stroke-width="2.5"/>
+
+  <rect x="1160" y="515" width="40" height="55" fill="#fff" stroke="#000" stroke-width="2"/>
+  <line x1="1153" y1="577" x2="1207" y2="508" stroke="#000" stroke-width="2"/>
+  <polygon points="1207,508 1198,510 1205,517" fill="#000"/>
+  <text x="1210" y="537" font-size="13" fill="#0f2a4a" font-weight="bold">RV1</text>
+  <text x="1210" y="553" font-size="12" fill="#333">10kΩ</text>
+  <line x1="1180" y1="570" x2="1180" y2="605" stroke="#000" stroke-width="2.5"/>
+
+  <polygon points="1160,605 1200,605 1180,645" fill="#fff" stroke="#000" stroke-width="2"/>
+  <line x1="1160" y1="645" x2="1200" y2="645" stroke="#000" stroke-width="2.5"/>
+  <line x1="1192" y1="600" x2="1205" y2="587" stroke="#000" stroke-width="1.5"/>
+  <line x1="1201" y1="596" x2="1205" y2="587" stroke="#000" stroke-width="1.5"/>
+  <line x1="1201" y1="587" x2="1205" y2="587" stroke="#000" stroke-width="1.5"/>
+  <line x1="1200" y1="610" x2="1213" y2="597" stroke="#000" stroke-width="1.5"/>
+  <line x1="1209" y1="606" x2="1213" y2="597" stroke="#000" stroke-width="1.5"/>
+  <line x1="1209" y1="597" x2="1213" y2="597" stroke="#000" stroke-width="1.5"/>
+  <text x="1215" y="630" font-size="13" fill="#0f2a4a" font-weight="bold">LED2</text>
+  <line x1="1180" y1="645" x2="1180" y2="850" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1180" cy="850" r="4" fill="#000"/>
+
+  <!-- ===================== BRANCH 3: SERVO SYSTEM ===================== -->
+  <circle cx="1400" cy="380" r="4" fill="#000"/>
+  <line x1="1400" y1="380" x2="1400" y2="430" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1400" cy="430" r="4" fill="#000"/>
+  <circle cx="1400" cy="485" r="4" fill="#000"/>
+  <line x1="1400" y1="430" x2="1425" y2="405" stroke="#000" stroke-width="2.5"/>
+  <text x="1415" y="418" font-size="13" fill="#0f2a4a" font-weight="bold">SW3</text>
+  <line x1="1400" y1="485" x2="1400" y2="510" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1400" cy="510" r="4" fill="#000"/>
+  <line x1="1400" y1="510" x2="1400" y2="530" stroke="#000" stroke-width="2.5"/>
+  <line x1="1400" y1="510" x2="1580" y2="510" stroke="#000" stroke-width="2.5"/>
+  <line x1="1580" y1="510" x2="1580" y2="530" stroke="#000" stroke-width="2.5"/>
+
+  <!-- Servo Motor Controller -->
+  <rect x="1350" y="530" width="170" height="130" rx="8" fill="#eaf2fb" stroke="#1a5276" stroke-width="2"/>
+  <text x="1435" y="580" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f2a4a">Servo Motor</text>
+  <text x="1435" y="597" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f2a4a">Controller</text>
+  <text x="1435" y="613" text-anchor="middle" font-size="11" fill="#555">(PWM driver)</text>
+  <text x="1356" y="545" font-size="10" fill="#333">VIN</text>
+  <text x="1356" y="655" font-size="10" fill="#333">GND</text>
+  <text x="1460" y="590" font-size="10" fill="#333">PWM OUT</text>
+
+  <line x1="1390" y1="660" x2="1390" y2="850" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1390" cy="850" r="4" fill="#000"/>
+
+  <line x1="1520" y1="595" x2="1580" y2="595" stroke="#000" stroke-width="2.5"/>
+
+  <!-- Servo SG90 -->
+  <rect x="1580" y="530" width="150" height="130" rx="8" fill="#fdf2e3" stroke="#a5651a" stroke-width="2"/>
+  <text x="1655" y="575" text-anchor="middle" font-size="13" font-weight="bold" fill="#5c3d0a">TowerPro</text>
+  <text x="1655" y="592" text-anchor="middle" font-size="13" font-weight="bold" fill="#5c3d0a">SG90 Servo</text>
+  <text x="1586" y="545" font-size="10" fill="#333">VCC</text>
+  <text x="1586" y="605" font-size="10" fill="#333">SIG</text>
+  <text x="1586" y="650" font-size="10" fill="#333">GND</text>
+
+  <line x1="1580" y1="645" x2="1580" y2="850" stroke="#000" stroke-width="2.5"/>
+  <circle cx="1580" cy="850" r="4" fill="#000"/>
+</svg>
