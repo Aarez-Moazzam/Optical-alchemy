@@ -15,6 +15,7 @@ The objective lenses and the sensors which were attached with it:
 <img width="1599" height="899" alt="WhatsApp Image 2026-08-06 at 19 47 52" src="https://github.com/user-attachments/assets/700385cd-ad0b-4bc0-99fe-b571928484fe" />
 <img width="1414" height="1080" alt="WhatsApp Image 2026-08-06 at 19 43 58" src="https://github.com/user-attachments/assets/134905c0-799c-4bf7-b92b-587f1c78253c" />
 
+Here is the Bill of materials (BOM):
 
 Qty,Component,Link
 3,18650 Lithium Ion Cells,https://epro.pk/product/inr18650-li-ion-lithium-battery-cell-3-7v-high-capacity-power-cell/
