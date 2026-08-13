@@ -29,9 +29,3 @@ Epidermis type B:
 <img width="1200" height="1600" alt="WhatsApp Image 2026-08-13 at 13 42 11 (3)" src="https://github.com/user-attachments/assets/7fdf7ac4-abb8-4c71-9cdc-18e6c510b1d0" />
 <img width="1200" height="1600" alt="WhatsApp Image 2026-08-13 at 13 42 11 (4)" src="https://github.com/user-attachments/assets/94b7a9e6-a637-41a3-984a-93aa0a6a8294" />
 <img width="1493" height="1530" alt="WhatsApp Image 2026-08-13 at 13 42 11 (5)" src="https://github.com/user-attachments/assets/59921f43-440f-40b5-b06a-516bddc43cd1" />
-
-
-Here is the Bill of materials (BOM):
-
-
-
