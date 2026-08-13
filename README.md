@@ -15,17 +15,23 @@ The objective lenses and the sensors which were attached with it:
 <img width="1599" height="899" alt="WhatsApp Image 2026-08-06 at 19 47 52" src="https://github.com/user-attachments/assets/700385cd-ad0b-4bc0-99fe-b571928484fe" />
 <img width="1414" height="1080" alt="WhatsApp Image 2026-08-06 at 19 43 58" src="https://github.com/user-attachments/assets/134905c0-799c-4bf7-b92b-587f1c78253c" />
 
+Here are some images from the microscope of two different onion epidermal cells at 3 different magnifications from least to most:
+
+Epidermis type A:
+
+<img width="1200" height="1600" alt="WhatsApp Image 2026-08-13 at 13 42 11" src="https://github.com/user-attachments/assets/5f6958ef-e942-4381-a88e-a3c1600c88c4" />
+<img width="1200" height="1600" alt="WhatsApp Image 2026-08-13 at 13 42 11 (1)" src="https://github.com/user-attachments/assets/7f3e3026-faa3-4873-9ba1-d281816b6a6b" />
+<img width="1339" height="1462" alt="WhatsApp Image 2026-08-13 at 13 42 11 (2)" src="https://github.com/user-attachments/assets/ebfd20fd-c836-4c1a-9506-0a3804f6fa50" />
+
+
+Epidermis type B:
+
+<img width="1200" height="1600" alt="WhatsApp Image 2026-08-13 at 13 42 11 (3)" src="https://github.com/user-attachments/assets/7fdf7ac4-abb8-4c71-9cdc-18e6c510b1d0" />
+<img width="1200" height="1600" alt="WhatsApp Image 2026-08-13 at 13 42 11 (4)" src="https://github.com/user-attachments/assets/94b7a9e6-a637-41a3-984a-93aa0a6a8294" />
+<img width="1493" height="1530" alt="WhatsApp Image 2026-08-13 at 13 42 11 (5)" src="https://github.com/user-attachments/assets/59921f43-440f-40b5-b06a-516bddc43cd1" />
+
+
 Here is the Bill of materials (BOM):
 
-Qty,Component,Link
-3,18650 Lithium Ion Cells,https://epro.pk/product/inr18650-li-ion-lithium-battery-cell-3-7v-high-capacity-power-cell/
-1,TowerPro SG90 Servo,https://epro.pk/product/tower-pro-sg90-9g-micro-servo-motor-with-accessories-blue/
-1,Servo Controller (CCMP Digital Multi Servo Tester),https://epro.pk/product/ccmp-digital-multi-servo-tester-for-esc-rc-servo-testing/
-1,LM2596 DC to DC Step Down Buck Converter with 7 Segment Display,https://epro.pk/product/dc-dc-step-down-buck-converter-with-7-segment-display-lm2596-in-pakistan/
-3,2 Pin On/Off Rocker Switches,https://epro.pk/product/2-pin-on-off-switch-rocker-switch-in-pakistan/
-1,100k Potentiometer,https://epro.pk/product/variable-resistor-potentiometer-volume-5k-10k-50k-100k/
-2,6 Pin Toggle Switches (MTS-202 DPDT),https://epro.pk/product/toggle-switch-mts-202-on-on-6-pins-dpdt-mini-toggle-switch-in-pakistan/
-1,TP4056 Lithium Battery Charging Board (1A Type-C),https://epro.pk/product/tp4056-lithium-battery-charging-board-1a-type-c-in-pakistan/
-1,18650 Battery Holder (3 Cell),https://epro.pk/product/18650-battery-holder-3-cell-in-pakistan/
 
-[BOM.csv](https://github.com/user-attachments/files/30829970/BOM.csv)
+
